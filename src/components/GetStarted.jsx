@@ -1,22 +1,22 @@
 import React from "react";
 import { arrowUp } from "../assets"; // make sure this path is correct
+import styles from "../style"
 
 const GetStarted = () => {
   return (
-    <div className="flex justify-center items-center w-32 h-32 rounded-full border-2 border-blue-800 p-2 cursor-pointer">
-      <div className="flex flex-col justify-center items-center w-full h-full rounded-full">
-        {/* First row: Get + arrow */}
-        <div className="flex flex-row justify-center items-center space-x-1">
-          <p className="font-poppins font-medium text-[18px] text-gradient">
-            Get
+    <div className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`}>
+      <div className={`${styles.flexCenter} flex-col bg-primary w-[100%] h-[100%] rounded-full`}>
+        <div className={`${styles.flexStart} flex-row`}>
+          <p className="font-poppins font-medium text-[18px] leading-[23px] mr-2">
+            <span className="text-gradient">Get</span>
           </p>
-          <img src={arrowUp} alt="arrow up" className="w-4 h-4 object-contain" />
+
+           <img  src={arrowUp} className="w-[23px] h-[23px] object-contain" />
         </div>
 
-        {/* Second row: Started */}
-        <p className="font-poppins font-medium text-[18px] text-gradient mt-1">
-          Started
-        </p>
+        <p className="font-poppins font-medium text-[18px] leading-[23px]">
+            <span className="text-gradient">Started</span>
+          </p>
       </div>
     </div>
   );

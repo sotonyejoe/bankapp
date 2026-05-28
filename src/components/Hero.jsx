@@ -1,6 +1,7 @@
 import discount from '../assets/discount.svg';
 import styles from '../style';
 import GetStarted from './GetStarted';
+import robot from "../assets/robot.png";
 
 const Hero = () => (
   <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -15,16 +16,44 @@ const Hero = () => (
       </div>
 
       <div className='flex flex-row justify-between items-center w-full'>
-        <h1 className='flex-1 font-poppins font-semi-bold ss:text-[72px] 
-        text-[52px] text-white ss:leading-[100px] leading-18.75'>The Next <br className='sm:block hidden' />{" "}
+        <h1 className='flex-1 font-poppins font-bold ss:text-[72px] 
+        text-[50px] text-white ss:leading-[100px] leading-18.75'>The Next <br className='sm:block hidden' />{" "}
         <span className='text-gradient'>Generation </span>{" "}
-        Payment Method</h1>
+        </h1>
 
         <div className='ss:flex md:mr-4 mr-0'>
           <GetStarted />
         </div>
       </div>
+
+      <h1 className='font-poppins font-bold ss:text-[68px] 
+        text-[52px] text-white ss:leading-[100px] leading-18.75 w-full'>
+          Payment Method
+      </h1>
+
+      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. 
+        We examine annual percentage rates, annual fees.
+      </p>
+    </div> 
+
+    <div className={`flex-1 flex flex-col ${styles.flexCenter} md:my-0 my-10 relative`}>
+    <img
+      src={robot}
+      alt="billing"
+      className="w-[100%] h-[100%] relative z-[5]"
+    />
+
+    <div className="absolute top-0 z-0 w-[70%] h-[50%] bg-blue-gradient blur-3xl opacity-20 " />
+    <div className="absolute top-0 z-0 w-[80%] h-[80%] bg-blue-200 rounded-full bottom-30 blur-3xl z-[1] opacity-20" />
+    <div className="absolute top-0 z-0 w-[50%] h-[50%] right-20 bg-blue-gradient blur-3xl  opacity-20" />
+
+    <div className={`md:hidden ${styles.flexCenter} flex-col`}>
+      <GetStarted />
     </div>
+    </div>
+
+    
   </section>
 );
 
