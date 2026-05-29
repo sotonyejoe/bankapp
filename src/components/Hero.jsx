@@ -44,9 +44,9 @@ const Hero = () => (
       className="w-[100%] h-[100%] relative z-[5]"
     />
 
-    <div className="absolute top-0 z-0 w-[70%] h-[50%] bg-blue-gradient blur-3xl opacity-20 " />
-    <div className="absolute top-0 z-0 w-[80%] h-[80%] bg-blue-200 rounded-full bottom-30 blur-3xl z-[1] opacity-20" />
-    <div className="absolute top-0 z-0 w-[50%] h-[50%] right-20 bg-blue-gradient blur-3xl  opacity-20" />
+    <div className="absolute top-0 z-0 w-[70%] h-[50%] bg-blue-gradient blur-3xl opacity-10 " />
+    <div className="absolute top-0 z-0 w-[80%] h-[80%] bg-pink-300 rounded-full bottom-30 blur-3xl z-[1] opacity-15" />
+    <div className="absolute top-0 z-0 w-[50%] h-[50%] right-20 bg-blue-gradient blur-3xl  opacity-10" />
 
     <div className={`md:hidden ${styles.flexCenter} flex-col`}>
       <GetStarted />
