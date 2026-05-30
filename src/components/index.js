@@ -8,6 +8,7 @@ import Stat from "./Stat";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
+import ScrollReveal from "./ScrollReveal";
 
 export {
   NavBar,
@@ -20,4 +21,5 @@ export {
   Footer,
   Testimonials,
   Hero,
+  ScrollReveal
 };

@@ -174,3 +174,20 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+/* Animation */
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: scrollX 20s linear infinite;
+}

@@ -10,6 +10,7 @@ import {
   Footer,
   Testimonials,
   Hero,
+  ScrollReveal
 } from './components'
 
 
@@ -25,18 +26,34 @@ function App() {
 
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero />
+          <ScrollReveal>
+            <Hero />
+          </ScrollReveal>
         </div>
       </div>
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Stat />
+
+          <ScrollReveal>
           <Business />
-          <Billing />
+          </ScrollReveal>
+
+          <ScrollReveal>
+           <Billing />
+          </ScrollReveal>
+         
+         <ScrollReveal>
           <CardDeal />
+         </ScrollReveal>
+          
+          <ScrollReveal>
           <Testimonials />
+          </ScrollReveal>
+          
           <Clients />
+          
           <CTA  />
           <Footer />
 
